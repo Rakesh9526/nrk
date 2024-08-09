@@ -27,6 +27,43 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+
+        <style>
+            .feature-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                min-height: 300px; /* Ensure all feature items have the same height */
+                transition: transform 0.3s ease-in-out;
+            }
+    
+            .feature-item img {
+                margin-bottom: 15px;
+                max-width: 100%;
+                height: auto;
+            }
+    
+            .feature-item a {
+                color: #333;
+                text-decoration: none;
+            }
+    
+            .feature-item:hover {
+                transform: translateY(-10px); /* Add a subtle hover effect */
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            }
+    
+            .row.g-4 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+        </style>
     </head>
 
     <body>
@@ -73,7 +110,7 @@
                             <a href="tel:+4733378901"><span class="text-primary">Free: + 0123 456 7890</span></a>
                         </div>
                     </div> -->
-                    <button class="btn btn-primary btn-md-square d-flex flex-shrink-0 mb-3 mb-lg-0 rounded-circle me-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+                    <!-- <button class="btn btn-primary btn-md-square d-flex flex-shrink-0 mb-3 mb-lg-0 rounded-circle me-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button> -->
                     <!-- <a href="" class="btn btn-primary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4">Order Now</a> -->
                 </div>
             </nav>
@@ -126,12 +163,13 @@
                                 <div class="col-12">
                                     <div class="d-flex">
                                         <div class="service-content text-end">
-                                            <a href="#" class="h4 d-inline-block mb-3">Residential Waters</a>
-                                            <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas provident maiores quisquam.</p>
+                                            <a href="#" class="h4 d-inline-block mb-3">Innovative Solutions</a>
+                                            <p class="mb-0">At NRK Wellness, we focus on innovative solutions, which constantly push the
+                                                threshold of water treatment technology to provide cutting-edge solutions that meet and exceed all industry standards.</p>
                                         </div>
-                                        <div class="ps-4">
+                                        <!-- <div class="ps-4">
                                             <div class="service-btn"><i class="fas fa-hand-holding-water text-white fa-2x"></i></div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -141,12 +179,13 @@
                                 <div class="col-12">
                                     <div class="d-flex">
                                         <div class="service-content text-end">
-                                            <a href="#" class="h4 d-inline-block mb-3">Commercial Waters</a>
-                                            <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas provident maiores quisquam.</p>
+                                            <a href="#" class="h4 d-inline-block mb-3">Consistent Quality</a>
+                                            <p class="mb-0">Our commitment to quality is unwavering. We always ensure that every product and service is delivered at the utmost standards, which guarantees the purity and
+                                                safety of water for all our clients.</p>
                                         </div>
-                                        <div class="ps-4">
+                                        <!-- <div class="ps-4">
                                             <div class="service-btn"><i class="fas fa-dumpster-fire text-white fa-2x"></i></div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -156,12 +195,13 @@
                                 <div class="col-12">
                                     <div class="d-flex">
                                         <div class="service-content text-end">
-                                            <a href="#" class="h4 d-inline-block mb-3">Filtration Plants</a>
-                                            <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas provident maiores quisquam.</p>
+                                            <a href="#" class="h4 d-inline-block mb-3">Accountability in Execution</a>
+                                            <p class="mb-0">Choosing NRK means choosing a partner who takes responsibility very seriously. We hold ourselves accountable for our actions, delivering on promises and
+                                                consistently meeting the expectations of our clients to make them delight.</p>
                                         </div>
-                                        <div class="ps-4">
+                                        <!-- <div class="ps-4">
                                             <div class="service-btn"><i class="fas fa-filter text-white fa-2x"></i></div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -169,7 +209,7 @@
                     </div>
                     <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="bg-transparent">
-                            <img src="img/water.png" class="img-fluid w-100" alt="">
+                            <img src="img/water_glass.png" class="img-fluid w-100" alt="" style="height: 680px;">
                         </div>
                     </div>
                     <div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
@@ -177,12 +217,12 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="d-flex">
-                                        <div class="pe-4">
+                                        <!-- <div class="pe-4">
                                             <div class="service-btn"><i class="fas fa-assistive-listening-systems text-white fa-2x"></i></div>
-                                        </div>
+                                        </div> -->
                                         <div class="service-content">
-                                            <a href="#" class="h4 d-inline-block mb-3">Water Softening</a>
-                                            <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas provident maiores quisquam.</p>
+                                            <a href="#" class="h4 d-inline-block mb-3">Professional Excellence</a>
+                                            <p class="mb-0">Professionalism is the Foundation of our approach. Our team of experts is dedicated to delivering services with the utmost integrity, ensuring that your water treatment needs are handled with the highest level of professionalism.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -192,12 +232,14 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="d-flex">
-                                        <div class="pe-4">
+                                        <!-- <div class="pe-4">
                                             <div class="service-btn"><i class="fas fa-recycle text-white fa-2x"></i></div>
-                                        </div>
+                                        </div> -->
                                         <div class="service-content">
-                                            <a href="#" class="h4 d-inline-block mb-3">Market Research</a>
-                                            <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas provident maiores quisquam.</p>
+                                            <a href="#" class="h4 d-inline-block mb-3">Timeless Commitment</a>
+                                            <p class="mb-0">NRK Wellness is more than a service provider; we are committed to the well- being of our clients. Our enduring commitment ensures that you can trust us for
+                                                reliable, long-term water treatment solutions.
+                                                </p>
                                         </div>
                                     </div>
                                 </div>
@@ -207,12 +249,14 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="d-flex">
-                                        <div class="pe-4">
+                                        <!-- <div class="pe-4">
                                             <div class="service-btn"><i class="fas fa-project-diagram text-white fa-2x"></i></div>
-                                        </div>
+                                        </div> -->
                                         <div class="service-content">
-                                            <a href="#" class="h4 d-inline-block mb-3">Project Planning</a>
-                                            <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas provident maiores quisquam.</p>
+                                            <a href="#" class="h4 d-inline-block mb-2">MISSION</a>
+                                            <p class="mb-0">We Provide the Quality Water Treatment Solutions, that gives an Innovative and Cost-Effective
+                                                practices through a professional and committed team with complete accountability which gives all
+                                                our customer peace of mind and health.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -220,12 +264,87 @@
                         </div>
                     </div>
                 </div>
+                 <!-- feature Start -->
+         <div class="container-fluid feature bg-light py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-uppercase text-primary">Our Feature</h4>
+                    <!-- <h1 class="display-3 text-capitalize mb-3">A Trusted Name In Bottled Water Industry</h1> -->
+                </div>
+                <div class="row g-4">
+                    <div class=" col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="feature-item p-4">
+                            <div class=" mb-3"><img src="img/service-1.png" alt="Sewage Treatment Plant"></div>
+                            <a href="#" class="h4 mb-3">Sewage Treatment Plant</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="feature-item p-4">
+                            <div class="mb-3"><img src="img/service-2.jpg" alt="Sullage Treatment Plant"></div>
+                            <a href="#" class="h4 mb-3">Sullage Treatment Plant</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="feature-item p-4">
+                            <div class="mb-3"><img src="img/service-3.png" alt="Industrial WTP"></div>
+                            <a href="#" class="h4 mb-3">Industrial WTP</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="feature-item p-4">
+                            <div class="mb-3"><img src="img/service-4.png" alt="Effluent Treatment Plant"></div>
+                            <a href="#" class="h4 mb-3">Effluent Treatment Plant</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="feature-item p-4">
+                            <div class="mb-3"><img src="img/service-5.png" alt="Industrial Effluent Treatment Plant"></div>
+                            <a href="#" class="h4 mb-3">Industrial Effluent Treatment Plant</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="feature-item p-4">
+                            <div class="mb-3"><img src="img/service-6.png" alt="Ultra-Filtration"></div>
+                            <a href="#" class="h4 mb-3">Ultra-Filtration</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="feature-item p-4">
+                            <div class=" mb-3"><img src="img/service-7.png" alt="Commercial RO Plant"></div>
+                            <a href="#" class="h4 mb-3">Commercial RO Plant</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="feature-item p-4">
+                            <div class=" mb-3"><img src="img/service-8.png" alt="PCB Approvals"></div>
+                            <a href="#" class="h4 mb-3">PCB Approvals</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="container wow fadeInUp">
+            <div class="row g-4">
+                <div class="col-lg-12 col-xl-4 ">
+                    <div class="p-3 mb-3 bg-primary text-white text-uppercase text-primary text-center rounded"><i class="fas fa-calendar-alt"></i> Emi Facility</div>
+                </div>
+                <div class="col-lg-12 col-xl-4">
+                    <div class="p-3 mb-2 bg-primary text-white text-uppercase text-primary text-center rounded"><i class="fas fa-microscope"></i> Free Water testing</div>
+                </div> 
+                <div class="col-lg-12 col-xl-4">
+                    <div class="p-3 mb-2 bg-primary text-white text-uppercase text-primary text-center rounded"><i class="fas fa-hand-holding-usd"></i> Free Service</div>
+                </div>  
+            </div>
+        </div>
+                
+            </div>
+            
+        </div>
         <!-- Service End -->
+       
 
         <!-- Fact Counter -->
-        <div class="container-fluid counter py-5">
+        <!-- <div class="container-fluid counter py-5">
             <div class="container py-5">
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
@@ -278,7 +397,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Fact Counter -->
 
         <!-- Testimonial Start -->
@@ -288,7 +407,13 @@
                     <h4 class="text-uppercase text-primary">Testimonials</h4>
                     <h1 class="display-3 text-capitalize mb-3">Our clients reviews.</h1>
                 </div>
-                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.3s">
+                <div class="container ">
+                    <div class="justify-content-center wow fadeInUp">
+                        <img src="img/poster2.png"  style="width: 1300px;">
+                    </div>
+
+                </div>
+                <!-- <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.3s">
                     <div class="testimonial-item text-center p-4">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt pariatur officiis quis molestias, sit iure sunt voluptatibus accusantium laboriosam dolore.
                         </p>
@@ -361,7 +486,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <!-- Testimonial End -->
@@ -369,7 +494,7 @@
         <!-- Footer Start -->
         <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
             <div class="container py-5">
-                <div class="row g-5 mb-5 align-items-center">
+                <!-- <div class="row g-5 mb-5 align-items-center">
                     <div class="col-lg-7">
                         <div class="position-relative mx-auto">
                             <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Email address to Subscribe">
@@ -384,29 +509,30 @@
                             <a class="btn btn-secondary btn-md-square rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
                             <div class="footer-item">
-                                <h3 class="text-white mb-4"><i class="fas fa-hand-holding-water text-primary me-3"></i>Acuas</h3>
+                                <img src="img/nrklogo.png" alt="Logo" style="width: 100px;height: 100px;margin-bottom: 20px;">
+                                <!-- <h3 class="text-white mb-4"><i class="fas fa-hand-holding-water text-primary me-3"></i>Acuas</h3> -->
                                 <p class="mb-3">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit.</p>
                             </div>
-                            <div class="position-relative">
+                            <!-- <div class="position-relative">
                                 <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
                                 <button type="button" class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="text-white mb-4">About Us</h4>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Why Choose Us</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Free Water Bottles</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Water Dispensers</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Bottled Water Coolers</a>
+                        <div class="footer-item d-flex flex-column" style="margin-top: 10px;">
+                            <h4 class="text-white mb-4">Our Links</h4>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Home</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Service</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Blog</a>
                             <a href="#"><i class="fas fa-angle-right me-2"></i> Contact us</a>
-                            <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
+                            <!-- <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a> -->
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-3">
@@ -429,31 +555,29 @@
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
                             <h4 class="text-white mb-4">Contact Info</h4>
-                            <a href="#"><i class="fa fa-map-marker-alt me-2"></i> 123 Street, New York, USA</a>
-                            <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i> info@example.com</a>
-                            <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i> info@example.com</a>
-                            <a href="tel:+012 345 67890"><i class="fas fa-phone me-2"></i> +012 345 67890</a>
-                            <a href="tel:+012 345 67890" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
+                            <a href="#"><i class="fa fa-map-marker-alt me-2"></i> GK Towers, Puzhakal, Thrissur, Kerala, India - 680 003</a>
+                            <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i> wellness.nrk@gmail.com</a>
+                            <a href="tel:+012 345 67890"><i class="fa-solid fa-briefcase me-2"></i> 8714 05 7274</a>
+                            <a href="tel:+012 345 67890" class="mb-3"><i class="fas fa-phone me-2"></i> 99 61 99 7274</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Footer End -->
-
         
         <!-- Copyright Start -->
         <div class="container-fluid copyright py-4">
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-md-6 text-center text-md-start mb-md-0">
-                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
+                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>nrkwellness</a>, All right reserved.</span>
                     </div>
                     <div class="col-md-6 text-center text-md-end text-body">
                         <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
                         <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
                         <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom text-white" href="https://themewagon.com">ThemeWagon</a>
+                        <!-- Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom text-white" href="https://themewagon.com">ThemeWagon</a> -->
                     </div>
                 </div>
             </div>

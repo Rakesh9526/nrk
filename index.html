@@ -28,6 +28,43 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+
+        <style>
+            .feature-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                min-height: 300px; /* Ensure all feature items have the same height */
+                transition: transform 0.3s ease-in-out;
+            }
+    
+            .feature-item img {
+                margin-bottom: 15px;
+                max-width: 100%;
+                height: auto;
+            }
+    
+            .feature-item a {
+                color: #333;
+                text-decoration: none;
+            }
+    
+            .feature-item:hover {
+                transform: translateY(-10px); /* Add a subtle hover effect */
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            }
+    
+            .row.g-4 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+        </style>
     </head>
 
     <body>
@@ -74,7 +111,7 @@
                             <a href="tel:+4733378901"><span class="text-primary">Free: + 0123 456 7890</span></a>
                         </div>
                     </div> -->
-                    <button class="btn btn-primary btn-md-square d-flex flex-shrink-0 mb-3 mb-lg-0 rounded-circle me-3" data-bs-toggle="modal" data-bs-target="#searchModal" style="background-color: #31b8c5;"><i class="fas fa-search" ></i></button>
+                    <!-- <button class="btn btn-primary btn-md-square d-flex flex-shrink-0 mb-3 mb-lg-0 rounded-circle me-3" data-bs-toggle="modal" data-bs-target="#searchModal" style="background-color: #31b8c5;"><i class="fas fa-search" ></i></button> -->
                     <!-- <a href="" class="btn btn-primary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4">Order Now</a> -->
                 </div>
             </nav>
@@ -93,8 +130,8 @@
                             <div class="carousel-caption-1">
                                 <div class="carousel-caption-1-content" style="max-width: 900px;">
                                     <h4 class="text-white text-uppercase fw-bold mb-4 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s;" style="letter-spacing: 3px;">Importance life</h4>
-                                    <h1 class="display-2 text-capitalize text-white mb-4 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.3s" style="animation-delay: 1.3s;">Always Want Safe Water For Healthy Life</h1>
-                                    <p class="mb-5 fs-5 text-white fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.5s" style="animation-delay: 1.5s;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                    <h1 class="display-2 text-capitalize text-white mb-4 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.3s" style="animation-delay: 1.3s;">Redefining your establishment with customised water treatment solutions</h1>
+                                    <!-- <p class="mb-5 fs-5 text-white fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.5s" style="animation-delay: 1.5s;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,  -->
                                     </p>
                                     <!-- <div class="carousel-caption-1-content-btn fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.7s" style="animation-delay: 1.7s;">
                                         <a class="btn btn-primary rounded-pill flex-shrink-0 py-3 px-5 me-2" href="#">Order Now</a>
@@ -561,65 +598,79 @@ highest level of professionalism
                     <h4 class="text-uppercase text-primary">Our Products</h4>
                     <h1 class="display-3 text-capitalize mb-3">We Deliver Best Quality Bottle Packs.</h1>
                 </div>
-                <div class="row g-5 justify-content-center">
-                    <div class="col-lg-6 col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class=" testimonial-item text-center p-4">
-                            
-                            <div class="d-flex justify-content-center mb-4">
-                                <img src="img/logo-1.png" class="img-fluid border border-4 border-primary" style="width: 150px; height: 150px; border-radius: 400px;" alt="">
-                            </div>
-                            <div class="d-block">
-                                <h4 class="text-dark">Sullage Treatment Plant</h4>
-                                <!-- <p class="m-0 pb-3">Profession</p> -->
-                        
-                            </div>
+                <div class="row g-4">
+                    <div class=" col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="feature-item p-4">
+                            <div class=" mb-3"><img src="img/filter-edited.png" alt="Sewage Treatment Plant"></div>
+                            <a href="#" class="h4 mb-3">Sewage Treatment Plant</a>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="product-item"style='height:auto;'>
-                            <img src="img/service-2.jpg" class="img-fluid w-100 rounded-top"  alt="Image" >
-                            <div class="product-content bg-light text-center rounded-bottom p-4">
-                                <!-- <p>2L 1 Bottle</p> -->
-                                <p class="h4 d-inline-block mb-3">Sullage Treatment
-                                    Plant</p>
-                                <!-- <p class="fs-4 text-primary mb-3">$35:00</p> -->
-                                <!-- <a href="#" class="btn btn-secondary rounded-pill py-2 px-4">Read More</a> -->
-                            </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="feature-item p-4">
+                            <div class="mb-3"><img src="img/filter-edited-2.png" alt="Sullage Treatment Plant" style="height:150px;"></div>
+                            <a href="#" class="h4 mb-3">Sullage Treatment Plant</a>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="product-item"style='height:auto;'>
-                            <img src="img/service-3.png" class="img-fluid w-100 rounded-top"  alt="Image">
-                            <div class="product-content bg-light text-center rounded-bottom p-4">
-                                <!-- <p>2L 1 Bottle</p> -->
-                                <p class="h4 d-inline-block mb-3">Industrial WTP</p>
-                                <!-- <p class="fs-4 text-primary mb-3">$35:00</p> -->
-                                <!-- <a href="#" class="btn btn-secondary rounded-pill py-2 px-4">Read More</a> -->
-                            </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="feature-item p-4">
+                            <div class="mb-3"><img src="img/service-3.png" alt="Industrial WTP"></div>
+                            <a href="#" class="h4 mb-3">Industrial WTP</a>
                         </div>
                     </div>
-                    <!-- <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="product-item">
-                            <img src="img/product-2.png" class="img-fluid w-100 rounded-top"  alt="Image">
-                            <div class="product-content bg-light text-center rounded-bottom p-4">
-                                <p>4L 2 Bottles</p>
-                                <a href="#" class="h4 d-inline-block mb-3">RO Water Bottle</a>
-                                <p class="fs-4 text-primary mb-3">$70:00</p>
-                                <a href="#" class="btn btn-secondary rounded-pill py-2 px-4">Read More</a>
-                            </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="feature-item p-4">
+                            <div class="mb-3"><img src="img/filter-edited-3.png" alt="Effluent Treatment Plant"></div>
+                            <a href="#" class="h4 mb-3">Effluent Treatment Plant</a>
                         </div>
-                    </div> -->
-                    <!-- <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="product-item">
-                            <img src="img/product-1.png" class="img-fluid w-100 rounded-top"  alt="Image">
-                            <div class="product-content bg-light text-center rounded-bottom p-4">
-                                <p>6L 3 Bottles</p>
-                                <a href="#" class="h4 d-inline-block mb-3">UV Water Bottle</a>
-                                <p class="fs-4 text-primary mb-3">$100:00</p>
-                                <a href="#" class="btn btn-secondary rounded-pill py-2 px-4">Read More</a>
-                            </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="feature-item p-4">
+                            <div class="mb-3"><img src="img/service-5.png" alt="Industrial Effluent Treatment Plant"></div>
+                            <a href="#" class="h4 mb-3">Industrial Effluent Treatment Plant</a>
                         </div>
-                    </div> -->
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="feature-item p-4">
+                            <div class="mb-3"><img src="img/service-6.png" alt="Ultra-Filtration"></div>
+                            <a href="#" class="h4 mb-3">Ultra-Filtration</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="feature-item p-4">
+                            <div class=" mb-3"><img src="img/service-7.png" alt="Commercial RO Plant"></div>
+                            <a href="#" class="h4 mb-3">Commercial RO Plant</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="feature-item p-4">
+                            <div class=" mb-3"><img src="img/service-8.png" alt="PCB Approvals"></div>
+                            <a href="#" class="h4 mb-3">PCB Approvals</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="feature-item p-4">
+                            <div class=" mb-3"><img src="img/filter-5.png" alt="PCB Approvals" style="height: 150px;"></div>
+                            <a href="#" class="h4 mb-3">Water Softener</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="feature-item p-4">
+                            <div class=" mb-3"><img src="img/filter-6.png" alt="PCB Approvals" style="height: 150px;"></div>
+                            <a href="#" class="h4 mb-3">Activated Carbon Filter</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="feature-item p-4">
+                            <div class=" mb-3"><img src="img/filter-7.png" alt="PCB Approvals" style="height: 150px;"></div>
+                            <a href="#" class="h4 mb-3">RO Plant</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="feature-item p-4">
+                            <div class=" mb-3"><img src="img/filter-9.png" alt="PCB Approvals" style="height: 150px;"></div>
+                            <a href="#" class="h4 mb-3">PSF (Pressure Sand Filter)</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -691,7 +742,7 @@ highest level of professionalism
                         <div class="team-item p-4">
                             <div class="team-inner rounded">
                                 <div class="team-img">
-                                    <img src="img/MD_image.png" class="img-fluid rounded-top w-100" alt="Image">
+                                    <img src="img/MD-new-edited.png" class="img-fluid rounded-top w-100" alt="Image">
                                     <!-- <div class="team-share">
                                         <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href=""><i class="fas fa-share-alt"></i></a>
                                     </div> -->
