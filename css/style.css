@@ -105,7 +105,7 @@
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--bs-primary);
+    color: #31b8c5;
 }
 
 .navbar-light .navbar-brand img {
@@ -207,7 +207,7 @@
         height: 2px;
         bottom: -1px;
         left: 50%;
-        background: var(--bs-primary);
+        background: #31b8c5;
         transition: .5s;
     }
 
@@ -222,7 +222,7 @@
         left: 50%;
         transform: translateX(-50%);
         border: 10px solid;
-        border-color: transparent transparent var(--bs-primary) transparent;
+        border-color: transparent transparent #31b8c5 transparent;
         opacity: 0;
         transition: 0.5s;
     }
@@ -625,6 +625,12 @@
 .product .product-item {
     border: 1px solid rgba(196, 211, 211, 0.9);
     border-radius: 10px;
+    max-width: 100%; 
+    width: 100%; /* Ensures the image takes the full width of the container */
+    height: auto; /* Maintains the aspect ratio */
+    display: block;
+    
+    
 }
 
 /*** Products End ***/
@@ -846,7 +852,7 @@
     background: var(--bs-white);
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
     .owl-carousel.testimonial-carousel {
         padding-top: 30px;
     }
@@ -854,8 +860,8 @@
     .testimonial .owl-nav .owl-prev,
     .testimonial .owl-nav .owl-next {
         top: -30px;
-    }
-}
+    } */
+/* } */
 /*** testimonial End ***/
 
 /*** Footer Start ***/
@@ -898,5 +904,7 @@
     background: var(--bs-dark);
 }
 /*** copyright end ***/
+
+
 
 
